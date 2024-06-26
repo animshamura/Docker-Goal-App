@@ -1,0 +1,65 @@
+version: '3.8'
+services:
+  api:
+    build: ./backend
+    volumes: 
+      - ./logs/:/app/logs/
+      # - /app/node_modules
+    depends_on:
+      - mongo
+
+  client:
+    build: ./frontend
+    stdin_open: true
+    tty: true
+    depends_on: 
+      - api
+
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+    restart: always
+    depends_on:
+      - mongo
+      - api
+      - client
+  mongo:
+    image: mongo:latest
+    container_name: mongo_db
+    environment:
+      - MONGO_INITDB_DATABASE=testdb
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+    # networks:
+    #   - mongo-network
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./my-data/db:/data/db
+      - ./database/archive:/database/archive
+
+  mongo-express:
+    image: mongo-express
+    container_name: mexpress
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=shamura
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=shamura
+      - ME_CONFIG_MONGODB_URL=mongodb://root:root@mongo:27017/?authSource=admin
+      - ME_CONFIG_BASICAUTH_USERNAME=anim
+      - ME_CONFIG_BASICAUTH_PASSWORD=anim
+    # networks:
+    #   - mongo-network
+    # links:
+    #   - mongo
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+
+volumes: 
+  logs:
+  
+# networks:
+#   mongo-network:
+#     driver: bridge
