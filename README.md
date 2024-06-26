@@ -1,4 +1,4 @@
-### Section:  
+### Dockerization sections:  
    - Dockerfile 
    - Docker-compose file 
    - Micro service connection  
