@@ -100,9 +100,13 @@ services:
 volumes: 
   logs:
 ```
-### Output analysis :
-<img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/add-goals.png?raw=true">
-<img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/remove-goals.png?raw=true">
+### Output analysis : 
+<br/>
+Added 4 goals Spring Boot, Machine Learning, Deep Learning and DevOps respectively. <br/> 
+<img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/add-goals.png?raw=true"><br/>
+Removed Machine Learning from the goals' list. <br/> 
+<img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/remove-goals.png?raw=true"> <br/> 
+List of goals in the database through Mongo Express. <br/> 
 <img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/dbstate.png?raw=true">
 
      
