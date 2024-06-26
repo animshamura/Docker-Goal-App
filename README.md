@@ -19,6 +19,7 @@ EXPOSE 5000
 
 CMD [ "npm","start" ]
 ```
+```
 FROM node:16-alpine as BUILDER
 
 WORKDIR /app
