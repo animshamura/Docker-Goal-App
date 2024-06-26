@@ -1,13 +1,15 @@
-### Project Architecture: 
+<div align="justify">
+   
+### Project Architecture : 
 <img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/archi.jpg?raw=true">
 
-### Dockerization sections:  
+### Dockerization sections :  
    - Dockerfile 
    - Docker-compose file 
-   - Micro service connection  
+   - Microservice connection  
    - Output analysis
    
-### Dockerfile: 
+### Dockerfile : 
 Dockerfile for the backend api. 
 ```
 FROM node:16-alpine
@@ -106,7 +108,8 @@ services:
 volumes: 
   logs:
 ```
-### Micro service connection: 
+### Microservice connection : 
+As a three tier app, there are three layers in the application : presentation layer, business logic layer and database layer. Presenatation layer is dependant on the business logic and so does the business logic layer to the database layer. So, the dependency has to be configured correctly. 
 
 ### Output analysis : 
 Added 4 goals Spring Boot, Machine Learning, Deep Learning and DevOps respectively. <br/>  <br/> 
@@ -116,3 +119,4 @@ Removed Machine Learning from the goals' list. <br/>  <br/>
 List of goals in the database through Mongo Express. <br/>  <br/> 
 <img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/dbstate.png?raw=true">
  <br/> 
+</div>
