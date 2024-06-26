@@ -101,5 +101,8 @@ volumes:
   logs:
 ```
 ### Output analysis :
+<img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/add-goals.png?raw=true">
+<img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/remove-goals.png?raw=true">
+<img src="
 
      
