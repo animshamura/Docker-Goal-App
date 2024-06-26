@@ -101,7 +101,6 @@ volumes:
   logs:
 ```
 ### Output analysis : 
-<br/>
 Added 4 goals Spring Boot, Machine Learning, Deep Learning and DevOps respectively. <br/>  <br/> 
 <img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/add-goals.png?raw=true"><br/> <br/> 
 Removed Machine Learning from the goals' list. <br/> 
