@@ -4,7 +4,6 @@ services:
     build: ./backend
     volumes: 
       - ./logs/:/app/logs/
-      # - /app/node_modules
     depends_on:
       - mongo
 
@@ -31,8 +30,7 @@ services:
       - MONGO_INITDB_DATABASE=testdb
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=root
-    # networks:
-    #   - mongo-network
+  
     restart: unless-stopped
     ports:
       - "27017:27017"
@@ -49,10 +47,7 @@ services:
       - ME_CONFIG_MONGODB_URL=mongodb://root:root@mongo:27017/?authSource=admin
       - ME_CONFIG_BASICAUTH_USERNAME=anim
       - ME_CONFIG_BASICAUTH_PASSWORD=anim
-    # networks:
-    #   - mongo-network
-    # links:
-    #   - mongo
+   
     restart: unless-stopped
     ports:
       - "8081:8081"
@@ -60,6 +55,3 @@ services:
 volumes: 
   logs:
   
-# networks:
-#   mongo-network:
-#     driver: bridge
