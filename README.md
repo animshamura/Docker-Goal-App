@@ -8,6 +8,7 @@
    - Output analysis
    
 ### Dockerfile: 
+Dockerfile for the backend api. 
 ```
 FROM node:16-alpine
 
@@ -23,6 +24,7 @@ EXPOSE 5000
 
 CMD [ "npm","start" ]
 ```
+Dockerfile for the frontend application. 
 ```
 FROM node:16-alpine as BUILDER
 
