@@ -1,7 +1,7 @@
 <div align="justify">
    
 ### Project Architecture : 
-<div align="cenete"><img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/archi.jpg?raw=true"></div>
+<div align="center"><img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/archi.jpg?raw=true"></div>
 
 ### Dockerization sections :  
    - Dockerfile 
