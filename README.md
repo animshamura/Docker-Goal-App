@@ -113,10 +113,16 @@ As a three tier app, there are three layers in the application : presentation la
 
 ### Output analysis : 
 Added 4 goals Spring Boot, Machine Learning, Deep Learning and DevOps respectively. <br/>  <br/> 
+<div align="center">
 <img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/add-goals.png?raw=true"><br/> <br/> 
+</div>
 Removed Machine Learning from the goals' list. <br/>  <br/> 
+<div align="center">
 <img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/remove-goals.png?raw=true"> <br/>  <br/> 
+</div>
 List of goals in the database through Mongo Express. <br/>  <br/> 
+<div align="center">
 <img src="https://github.com/animshamura/Three-Tier-Dockerization/blob/main/app-screenshots/dbstate.png?raw=true">
+</div>
  <br/> 
 </div>
